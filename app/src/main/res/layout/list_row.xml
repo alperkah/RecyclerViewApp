@@ -31,7 +31,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
-
+            <TextView
+                android:id="@+id/rating"
+                android:text="Burada imdb puanı var"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

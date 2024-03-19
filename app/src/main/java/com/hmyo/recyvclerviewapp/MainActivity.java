@@ -38,10 +38,16 @@ public class MainActivity extends AppCompatActivity {
 
         listItems = new ArrayList<>();
 
-        for (int i = 0; i<20; i++){
-            ListItem item = new ListItem("Başlık - " + i, "Açıklama " + i);
-            listItems.add(item);
-        }
+        ListItem item1 = new ListItem("Titanic","Romantik drama","IMDB 9") ;
+        listItems.add(item1);
+        ListItem item2 = new ListItem("Matrix","Bilim kurgu","IMDB 10") ;
+        listItems.add(item2);
+        ListItem item3 = new ListItem("Avatar","Fantastik","IMDB 9") ;
+        listItems.add(item3);
+        ListItem item4 = new ListItem("Godfather","Dram","IMDB 10") ;
+        listItems.add(item4);
+
+
 
         adapter = new MyAdapter(this, listItems);
         recyclerView.setAdapter(adapter);
